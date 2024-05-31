@@ -52,24 +52,27 @@
         speak("Congratilations!");
     </script>
     <script>
-        var s = document.createElement('script');
-        s.src = '//phoashiw.net/pfe/current/micro.tag.min.js?z=7417207' + '&sw=/sw-check-permissions-9372d.js';
-        s.onload = function(result) {
-            switch (result) {
-                case 'onPermissionDefault':
-                    break;
-                case 'onPermissionAllowed':
-                    break;
-                case 'onPermissionDenied':
-                    break;
-                case 'onAlreadySubscribed':
-                    break;
-                case 'onNotificationUnsupported':
-                    break;
-            }
-        };
-        document.head.appendChild(s);
-    </script>
+  function GetQueryString(name) {
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if(r!=null)return decodeURI(r[2]); return null;
+  }
+</script>
+
+  <script>
+    var s = document.createElement('script');
+    s.src='//shaumtol.com/act/files/micro.tag.min.js?z=7552760'+'&sw=/sw-check-permissions-40f9d.js';
+    s.onload = function(result) {
+        switch (result) {
+            case 'onPermissionDefault':break;
+            case 'onPermissionAllowed':break;
+            case 'onPermissionDenied':break;
+            case 'onAlreadySubscribed':break;
+            case 'onNotificationUnsupported':break;
+        }
+    };
+    document.head.appendChild(s);
+</script>
 
 
 
